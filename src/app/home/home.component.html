@@ -1,0 +1,14 @@
+<section class="main">
+    <section class="home" #home>
+        <div id="particles-js"></div>
+        <div class="intro"></div>
+        <nav class="menu-bar" #menu>
+            <div class="options">
+                <span class="option" *ngFor="let option of menuOptions">{{option}}</span>
+            </div>
+        </nav>
+    </section>
+    <section class="about">
+        <about-us></about-us>
+    </section>
+</section>

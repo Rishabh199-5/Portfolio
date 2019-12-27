@@ -1,0 +1,189 @@
+
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  @keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  .shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+  }
+  
+  @-webkit-keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+  }
+  
+  .about {
+    padding: 100px 0 130px 0;
+    .heading{
+      display: flex;
+      flex-direction: column;
+      color: #616161;
+      font-size: 30pt;
+      place-content: center;
+      align-items: center;
+    }
+    .line-container{
+      display: flex;
+      place-content: center;
+      align-items: center;
+      animation-delay: 0.5s;
+      .line{
+        width: 70px;
+        height: 4px;
+        background: #444649;
+        margin: 25px 0 100px 0;
+      }
+    }
+  .para-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    .parameter{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .title{
+            font-family:bold;
+            margin: 15px 0 5px 0;
+            text-align: center;
+            font-size: 18pt;
+            color: #616161;
+          }
+          .detail{
+            text-align: center;
+          }
+        .hex-wrap{
+          height: 100px;
+          width: 100px;
+          text-align: center;
+          position: relative;
+          display: inline-block;
+          .hexagon{
+            background-color: #04C2C9;
+            height: 100%;
+            width: calc(100% * 0.57735);
+            display: inline-block;
+          }
+          .hexagon:before {
+            position: absolute;
+            top: 0;
+            right: calc((100% / 2) - ((100% * 0.57735) / 2));
+            background-color: inherit;
+            height: inherit;
+            width: inherit;
+            content: '';
+            transform: rotateZ(60deg);
+          }
+          .hexagon:after {
+            position: absolute;
+            top: 0;
+            right: calc((100% / 2) - ((100% * 0.57735) / 2));
+            background-color: inherit;
+            height: inherit;
+            width: inherit;
+            content: '';
+            transform: rotateZ(-60deg);
+        }
+        }
+
+        padding: 0 10px;
+        height: 230px;
+      }
+    }
+}
+
+@media only screen and (max-width:768px){
+  .about{
+    .para-container{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+@media only screen and (max-width:335px){
+  .about{
+    .para-container{
+      display: grid;
+      grid-template-columns: auto ;
+    }
+  }
+}

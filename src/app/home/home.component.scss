@@ -1,0 +1,47 @@
+.fixed{
+  top: 0;
+  bottom: inherit;
+  left: 0;
+  position: fixed;  
+}
+
+.desk {
+  animation: popDown .5s;
+}
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: #160f10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+.main{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  .home{
+    height: 100%;
+    width: 100%;
+    .menu-bar{
+      background-color:#1B242F;
+      height: 50px;
+      width: 100%;
+      border-bottom: 3px solid #04C2C9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      place-content: center;
+      z-index: 99999;
+      .options{
+  
+        .option{
+            color: #ffffff;
+            margin: 0 20px;
+            text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

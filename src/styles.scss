@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+                
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'),
+    local('Roboto-Regular'),
+    url(assets/fonts/Roboto-Regular.ttf) format('truetype');
+    
+  }
+  
+  @font-face {
+    font-family: 'medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto-Medium'),
+    local('Roboto Medium'),
+    local('medium'),
+    url(assets/fonts/Roboto-Medium.ttf) format('truetype');
+  
+  }
+  @font-face {
+    font-family: 'bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto-Bold'),
+    local('Roboto Bold'),
+    local('bold'),
+    url(assets/fonts/Roboto-Bold.ttf) format('truetype');
+  
+  }
+  //theme
+  
+  *{
+    font-family: 'Roboto Regular';    
+    user-select: none;
+  }
+  
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    transition: color 0.2s ease;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    cursor: pointer;
+  }
+  
