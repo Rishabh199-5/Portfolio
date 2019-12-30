@@ -1,14 +1,32 @@
 <section class="main">
     <section class="home" #home>
         <div id="particles-js"></div>
-        <div class="intro"></div>
+        <div class="intro">
+            <div class="intro-text">
+                Hello, I'm 
+                <span class="highlight">
+                    Rishabh Dangwal
+                </span>
+                <br>
+                I'm a full-stack web developer.
+            </div>
+        </div>
         <nav class="menu-bar" #menu>
             <div class="options">
                 <span class="option" *ngFor="let option of menuOptions">{{option}}</span>
             </div>
         </nav>
     </section>
-    <section class="about">
+    <section class="about" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
         <about-us></about-us>
     </section>
+    <section class="about-me" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+        <rishabh></rishabh>
+    </section>
+    <section class="contact">
+        <section class="contact-curve">
+        </section>
+        <contact-me></contact-me>
+    </section>
+
 </section>

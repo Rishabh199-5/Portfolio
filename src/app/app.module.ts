@@ -8,13 +8,15 @@ import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutUsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,

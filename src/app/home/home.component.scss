@@ -17,6 +17,23 @@
     background-size: cover;
     background-position: 50% 50%;
   }
+  .intro{
+    font-size: 32pt;
+    line-height: 36pt;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    .intro-text{
+      text-align: center;
+      .highlight{
+        color:#E31B6D;
+      }
+    }
+  }
 .main{
   height: 100%;
   width: 100%;
@@ -42,6 +59,22 @@
             text-transform: uppercase;
         }
       }
+    }
+  }
+  .about-me{
+    display: inherit;
+    width: 100%;
+    padding-bottom: 175px;
+  }
+
+  .contact{
+    width: 100%;
+    .contact-curve{
+      height: 175px;
+      background: #252934;
+      width: 100%;
+      border-top-left-radius: 50% 20%;
+      border-top-right-radius: 50% 20%;
     }
   }
 }

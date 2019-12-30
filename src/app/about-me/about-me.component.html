@@ -1,1 +1,14 @@
-<p>about-me works!</p>
+<div class="container">
+    <div class="left common">
+        <div class="img-container">
+            <img class="me" src="">
+        </div>
+    </div>
+    <div class="right common">
+        <div class="bar" *ngFor="let skill of myskills">
+            <div class="fill" #fill></div>
+            <div class="name">{{skill?.name}}</div>
+            <span class="rate">{{skill?.rate}}</span>
+        </div>
+    </div>
+</div>
