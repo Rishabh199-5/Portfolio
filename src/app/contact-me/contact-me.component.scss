@@ -1,10 +1,53 @@
+input,textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background: #1E242C;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
 .container{
     background: #252934;
     .header{
-        font-size: 30pt;
-        color:#ffffff;
-        display: flex;
-        align-items: center;
-        place-content: center;
+        .label{
+            font-size: 30pt;
+            color:#ffffff;
+            display: flex;
+            align-items: center;
+            place-content: center;
+            width:100%;
+        }
+        .line-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            place-content: center;
+            .line{
+                width: 70px;
+                height: 4px;
+                background: #ffffff;
+                margin: 25px 0;
+            }
+          }
+    }
+    .contact-form{
+        .text{
+            font-weight: 600;
+            color: #04C2C9;
+            text-align: center;
+        }
+        .form{
+            display: inline-block;
+            width:100%;
+            form{
+                margin: 0 auto;
+                min-width: 500px;
+            }
+        }
     }
 }

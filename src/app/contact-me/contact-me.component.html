@@ -1,11 +1,20 @@
 <div class="container">
     <div class="header">
-        <span>CONTACT</span>
+        <div class="label">CONTACT</div>
+        <div class="line-container">
+            <span class="line"></span>
+        </div>
     </div>
-    <div class="line"></div>
     <div class="contact-form">
             <div class="text">
                 {{contactText}}
+            </div>
+            <div class="form">
+                <form [formGroup]="contactForm" >
+                    <input type="text" formControlName="name">
+                    <input type="text" formControlName="email">
+                    <textarea formControlName="message"></textarea>
+                </form>
             </div>
     </div>
 </div>
