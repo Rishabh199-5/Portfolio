@@ -1,3 +1,4 @@
+@import '../../sass/_mixins.scss';
 input,textarea{
     display: block;
     width: 100%;
@@ -45,8 +46,19 @@ input,textarea{
             display: inline-block;
             width:100%;
             form{
-                margin: 0 auto;
-                min-width: 500px;
+                margin: 40px auto 0 auto;
+                max-width: 500px;
+                .submit{
+                    float: right;
+                    margin: 5px 0 0 0;
+                    font-size: 12pt;
+                    padding: 10px 30px;
+                    color: #fff;
+                    background: transparent;
+                    outline: 0;
+                    text-transform: uppercase;
+                    @include btn;
+                }
             }
         }
     }

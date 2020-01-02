@@ -1,3 +1,5 @@
+@import '../../sass/mixins';
+
 .fixed{
   top: 0;
   bottom: inherit;
@@ -24,11 +26,21 @@
     top: 30%;
     width: 100%;
     color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    place-content: center;
+    .btn{
     display: flex;
     align-items: center;
     place-content: center;
+      .view-btn{
+        @include btn;
+      }
+    }
     .intro-text{
       text-align: center;
+      margin: 0 0 20px 0;
       .highlight{
         color:#E31B6D;
       }

@@ -14,9 +14,9 @@ export class ContactMeComponent implements OnInit {
     private fb:FormBuilder
   ) { 
     this.contactForm=this.fb.group({
-        name:['Name'],
-        email:['Enter Email'],
-        message:['Your Message']
+        name:[''],
+        email:[''],
+        message:['']
       }
     )
   }

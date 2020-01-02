@@ -11,9 +11,10 @@
             </div>
             <div class="form">
                 <form [formGroup]="contactForm" >
-                    <input type="text" formControlName="name">
-                    <input type="text" formControlName="email">
-                    <textarea formControlName="message"></textarea>
+                    <input type="text" placeholder="Name" formControlName="name">
+                    <input type="text" placeholder="Email" formControlName="email">
+                    <textarea placeholder="Your Message" formControlName="message"></textarea>
+                    <div class="submit">submit</div>
                 </form>
             </div>
     </div>
