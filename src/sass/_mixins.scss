@@ -1,0 +1,43 @@
+@function get-color($theme, $color, $shade){
+    @return map-get(map-get($theme, $color ), $shade);
+}
+@mixin boxSizing($type) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
+    
+}
+
+@mixin setupTheming($theme){
+    .font-color-primary{
+        color: get-color($theme, primary, 500)!important;
+    }
+    .background-color-primary{
+        background: get-color($theme, primary, 500)!important;
+    }
+    .sidenav-option{
+        @extend .background-color-primary;
+        color: get-color($theme, background, card)!important;
+        label{
+            opacity: 1;
+            color: get-color($theme, background, card)!important;        
+        }
+        i{
+            opacity: 1;
+        }
+    }
+}
+
+@mixin btn{
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 13pt;
+    padding: 12px 40px 12px 15px;
+    text-align: center;
+    &:hover{
+        background: #04C2C9;
+        border:2px solid #04C2C9;
+        cursor: pointer;
+    }
+  }
