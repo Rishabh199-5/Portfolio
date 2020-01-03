@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { FooterComponent } from './footer/footer.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     HomeComponent,
     AboutUsComponent,
     AboutMeComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    AngularFontAwesomeModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
