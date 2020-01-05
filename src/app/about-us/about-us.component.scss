@@ -141,6 +141,15 @@
             height: 100%;
             width: calc(100% * 0.57735);
             display: inline-block;
+            i{
+              position: absolute;
+              top: 20px;
+              font-size: 34pt;
+              color: #fff;
+              left: 0;
+              right: 0;
+              z-index: 1;
+            }
           }
           .hexagon:before {
             position: absolute;

@@ -12,6 +12,11 @@ input,textarea{
     color: #fff;
 }
 
+textarea{
+    min-height: 150px;
+    margin-bottom: 5px;
+}
+
 .container{
     background: #252934;
     .header{

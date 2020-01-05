@@ -34,8 +34,20 @@
     display: flex;
     align-items: center;
     place-content: center;
-      .view-btn{
+    .view-btn{
+      position: relative;
         @include btn;
+        &:hover{
+          .fa-arrow-right{
+            transform: rotate(90deg);
+          }
+        }
+        .fa-arrow-right{
+          transition: transform .3s;
+          position: absolute;
+          right: 15px;
+          top: 28px;
+        }
       }
     }
     .intro-text{
@@ -82,11 +94,18 @@
   .contact{
     width: 100%;
     .contact-curve{
-      height: 175px;
       background: #252934;
+      height: 175px;
       width: 100%;
       border-top-left-radius: 50% 20%;
       border-top-right-radius: 50% 20%;
     }
+  }
+
+  .footer{
+    background: #252934;
+    padding-top: 175px;
+    display: inline-block;
+    width: 100%;
   }
 }
