@@ -1,15 +1,39 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
-
-  constructor() { }
+export class ProjectsComponent {
+  filters:Array<{name:string,children:Array<{title:string,subTitle:string,imgUrl:string}>}>;
+  constructor() { 
+    this.filters=[];
+  }
 
   ngOnInit() {
+    this.filters=[
+      {
+        name:"ALL",children:[
+          
+        ]
+      },
+      {
+        name:"ANGULAR",children:[
+          
+        ]
+      },
+      {
+        name:"JAVASCRIPT",children:[
+          
+        ]
+      },
+      {
+        name:"NODEJS",children:[
+          
+        ]
+      }
+    ]
   }
 
 }

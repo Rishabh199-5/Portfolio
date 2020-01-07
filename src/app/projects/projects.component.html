@@ -1,1 +1,11 @@
-<p>projects works!</p>
+<div class="projects" >   
+    <div class="heading animated slideInRight">
+        <span>Projects</span>    
+    </div>
+    <div class="line-container animated slideInRight">    
+            <span class="line"></span>
+    </div>
+    <div class="filter-wrap">
+        <span class="filter" *ngFor="let filter of filters">{{filter?.name}}</span>
+    </div>
+</div>
