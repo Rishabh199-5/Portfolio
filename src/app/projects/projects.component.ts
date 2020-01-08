@@ -7,6 +7,7 @@ import { Component} from '@angular/core';
 })
 export class ProjectsComponent {
   filters:Array<{name:string,children:Array<{title:string,subTitle:string,imgUrl:string}>}>;
+  selectedIndex=0;
   constructor() { 
     this.filters=[];
   }
@@ -34,6 +35,10 @@ export class ProjectsComponent {
         ]
       }
     ]
+  }
+
+  activeFilter(index:number){
+    this.selectedIndex=index;
   }
 
 }
