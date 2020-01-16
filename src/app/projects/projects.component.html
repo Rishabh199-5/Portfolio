@@ -8,4 +8,11 @@
     <div class="filter-wrap">
         <span class="filter" [ngClass]="{'active':i==selectedIndex}" *ngFor="let filter of filters;let i=index;" (click)="selectedIndex=i">{{filter?.name}}</span>
     </div>
+    <div class="grid">
+        <div class="content" *ngFor="let project of projects">
+            <div class="card" [style.backgroundImage]="'url('+ project.imgUrl+')'">
+            </div>
+            <div class="text">{{project?.title}}</div>
+        </div>
+    </div>
 </div>

@@ -143,6 +143,33 @@
           transition: background-color .5s;
       }
     }
+    .grid{
+      display: grid;
+      .content{
+        margin: 0 auto;
+        &:hover{
+          // opacity: 0;
+          background: #ffffff;
+          .text{
+            display: inline-block;
+          }
+          .card{
+            opacity: 0;
+          }
+        }
+        .card{
+          width: 300px;
+          height: 390px;
+          cursor: pointer;
+          transition: opacity .5s;
+          background: center center/cover;
+        
+        }
+        .text{
+          display: none;
+        }
+      }
+    }
 }
 
 @media only screen and (max-width:768px){
