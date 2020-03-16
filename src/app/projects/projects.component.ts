@@ -34,8 +34,21 @@ export class ProjectsComponent {
 
     this.projects=[
       {
-        title:"Assignment Real Time Review",imgUrl:"assets/pics/ARR.svg",type:Constants.FILTER_TYPES.NODEJS
+        title:"Real Time Application",imgUrl:"assets/pics/ARR.svg",type:Constants.FILTER_TYPES.NODEJS
+      },
+      {
+        title:"Admissions",imgUrl:"assets/pics/admissions.jpg",type:Constants.FILTER_TYPES.ANGULAR,
+      },
+      {
+        title:"Ecommerce",imgUrl:"assets/pics/ecomm.png",type:Constants.FILTER_TYPES.ANGULAR,
+      },
+      {
+        title:"Point Of Sale",imgUrl:"assets/pics/posjpg.jpg",type:Constants.FILTER_TYPES.ANGULAR,
+      },{
+        title:"Websites",imgUrl:"assets/pics/web.jpg",type:Constants.FILTER_TYPES.ANGULAR,
+
       }
+
     ]
   }
 
