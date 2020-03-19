@@ -18,7 +18,7 @@
         </div>
         <nav class="menu-bar" #menu>
             <div class="options">
-                <span class="option" *ngFor="let option of menuOptions">{{option}}</span>
+                <span class="option" *ngFor="let option of menuOptions;let i=index;" (click)="selectOption(i)">{{option}}</span>
             </div>
         </nav>
     </section>
@@ -30,6 +30,9 @@
     </section>
     <section class="projects">
         <projects></projects>
+    </section>
+    <section class="blogs">
+        <blog></blog>
     </section>
     <section class="contact">
         <section class="contact-curve">

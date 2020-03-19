@@ -3,6 +3,8 @@ import { ParticlesConfig } from './particles-config';
 import { fromEvent, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { DOCUMENT } from '@angular/common';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
+import {Http, ResponseContentType, RequestOptions} from '@angular/http';
 declare let particlesJS: any;
 
 @Component({
@@ -17,10 +19,11 @@ export class HomeComponent implements OnInit {
   @ViewChild('home', {static: false}) homeRef;
   @ViewChild('menu', {static: false}) navRef;
   constructor(
-    @Inject(DOCUMENT) private document: any
+    @Inject(DOCUMENT) private document: any,
+    private http:HttpClient
   ) {
     this.menuOptions=[
-      "Home","About","Portfolio","Blog","Contact"
+      "Home","About","Portfolio","Blog","Contact","Resume"
     ];
    }
   public ngOnInit(): void {
@@ -49,5 +52,39 @@ export class HomeComponent implements OnInit {
       this.navRef.nativeElement.classList.remove('desk');
     }
   }
-  
+
+  selectOption(index){
+    if(index==5){
+      let targetUrl="assets/files/Rishabh_Resume.pdf";
+      this.downloadPDF(targetUrl);
+    }
+  }
+
+  downloadPDF(serviceURL)
+  {
+
+    let headerOptions = new HttpHeaders({
+    'Content-Type': 'application/json', 
+    'Accept': 'application/pdf'
+    }); 
+
+      let requestOptions = {headers : headerOptions,responseType: 'blob' as 'blob'}; 
+      // post or get depending on your requirement
+        this.http.get(serviceURL,requestOptions).pipe(map((data :any)  => {
+
+          let blob = new Blob([data], { 
+             type: 'application/pdf' // must match the Accept type
+          // type: 'application/octet-stream' // for excel 
+          });
+          var link = document.createElement('a');
+          link.href = window.URL.createObjectURL(blob);
+          link.download = 'Rishabh_Frontend.pdf';
+          link.click();
+          window.URL.revokeObjectURL(link.href);
+
+        })).subscribe((result : any) => {
+        });
+
+  }
+
 }
