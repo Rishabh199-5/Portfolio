@@ -1,12 +1,12 @@
 <div class="container">
-    <div class="left common">
+    <div class="left common" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-once="true">
         <div class="img-container">
             <img class="me" src="">
         </div>
     </div>
-    <div class="right common">
+    <div class="right common" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-once="true">
         <div class="bar" *ngFor="let skill of myskills">
-            <div class="fill" #fill></div>
+            <div class="fill" data-aos-easing="ease-in-out" data-aos-duration="2000" #fill></div>
             <div class="name">{{skill?.name}}</div>
             <span class="rate">{{skill?.rate}}</span>
         </div>

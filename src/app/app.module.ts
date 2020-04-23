@@ -25,7 +25,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ContactMeComponent,
     FooterComponent,
     ProjectsComponent,
-    BlogComponent
+    // BlogComponent
   ],
   imports: [
     BrowserModule,

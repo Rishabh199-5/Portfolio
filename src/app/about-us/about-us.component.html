@@ -1,15 +1,15 @@
 <div class="about" >   
-    <div class="heading animated slideInLeft">
-        <span>ABOUT</span>    
+    <div class="heading">
+        <span  data-aos="fade-right" data-aos-anchor="#example-anchor"  data-aos-duration="1000" data-aos-once="true">ABOUT</span>    
     </div>
-    <div class="line-container animated slideInLeft">    
-            <span class="line"></span>
+    <div class="line-container">    
+            <span class="line" data-aos="fade-right" data-aos-anchor="#example-anchor"  data-aos-duration="1000" data-aos-once="true"></span>
     </div>
     <div class="para-container">
-        <div class="parameter" *ngFor="let parameter of aboutData">
-            <div class="hex-wrap shake animated">
+        <div class="parameter" *ngFor="let parameter of aboutData"  data-aos="flip-right" data-aos-once="true">
+            <div class="hex-wrap">
                 <div class="hexagon">
-                    <i class="fa fa-clock-o"></i>
+                    <i [class]="parameter?.icon"></i>
                 </div>
             </div>
             <div class="title">{{parameter?.title}}</div>

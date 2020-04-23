@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
-  aboutData:Array<{title:string,detail:string}>;
+  aboutData:Array<{title:string,detail:string,icon:string}>;
   constructor() { 
     this.aboutData=[];
   }
@@ -16,18 +16,22 @@ export class AboutUsComponent implements OnInit {
       {
         title:"Fast",
         detail:"Fast load times and lag free interaction, my highest priority.",
+        icon:"fa fa-clock-o"
       },
       {
-        title:"Fast",
-        detail:"Fast load times and lag free interaction, my highest priority.",
+        title:"Responsive",
+        detail:"My layouts will work on any device, big or small.",
+        icon:"fa fa-desktop"
       },
       {
-        title:"Fast",
-        detail:"Fast load times and lag free interaction, my highest priority.",
+        title:"Intuitive",
+        detail:"Strong preference for easy to use, intuitive UX/UI.",
+        icon:"fa fa-lightbulb-o"
       },
       {
-        title:"Fast",
-        detail:"Fast load times and lag free interaction, my highest priority.",
+        title:"Dynamic",
+        detail:"Websites don't have to be static, I love making pages come to life.",
+        icon:"fa fa-rocket"
       }
     ]
   }
