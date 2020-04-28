@@ -15,6 +15,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +26,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ContactMeComponent,
     FooterComponent,
     ProjectsComponent,
-    // BlogComponent
+    // BlogComponent,
+    LoaderComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFontAwesomeModule,
