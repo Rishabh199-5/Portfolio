@@ -1,19 +1,23 @@
-<div class="about" >   
+<div class="about">
     <div class="heading">
-        <span  data-aos="fade-right" data-aos-anchor="#example-anchor"  data-aos-duration="1000" data-aos-once="true">ABOUT</span>    
+        <span data-aos="fade-right"  data-aos-duration="750"
+    >ABOUT</span>
     </div>
-    <div class="line-container">    
-            <span class="line" data-aos="fade-right" data-aos-anchor="#example-anchor"  data-aos-duration="1000" data-aos-once="true"></span>
+    <div class="line-container">
+        <span class="line" data-aos="fade-right"  data-aos-duration="500"
+        ></span>
     </div>
     <div class="para-container">
-        <div class="parameter" *ngFor="let parameter of aboutData"  data-aos="flip-right" data-aos-once="true">
-            <div class="hex-wrap">
+        <div class="parameter" *ngFor="let parameter of aboutData">
+            <div class="hex-wrap" data-aos="flip-right" data-aos-once="true">
                 <div class="hexagon">
                     <i [class]="parameter?.icon"></i>
                 </div>
             </div>
-            <div class="title">{{parameter?.title}}</div>
-            <div class="detail">{{parameter?.detail}}</div>
+            <div class="text" data-aos="fade-right" data-aos-once="true">
+                <div class="title">{{parameter?.title}}</div>
+                <div class="detail">{{parameter?.detail}}</div>
+            </div>
         </div>
     </div>
 </div>

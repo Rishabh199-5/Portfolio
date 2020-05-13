@@ -75,3 +75,11 @@ body {
     font-feature-settings: 'liga';
     cursor: pointer;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .highlight{
+    color: #009ada;
+  }

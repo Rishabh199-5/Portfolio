@@ -145,12 +145,13 @@
     }
     .grid{
       display: grid;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: repeat(4,minmax(0,1fr));
       .content{
         margin: 0 auto;
         position: relative;
         .hover-content{
           position: absolute;
+          cursor: pointer;
           top: 24%;
           width: 100%;
           .text,.highLight{
@@ -184,6 +185,7 @@
         .card{
           width: 300px;
           height: 390px;
+          margin:auto;
           cursor: pointer;
           transition: opacity .5s;
           background: center center/cover;
@@ -195,12 +197,16 @@
 
 @media only screen and (max-width:768px){
   .projects{
-    
+    .grid{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
   }
 }
 
 @media only screen and (max-width:335px){
   .projects{
-
+    .grid{
+      grid-template-columns:1fr;
+    }
   }
 }

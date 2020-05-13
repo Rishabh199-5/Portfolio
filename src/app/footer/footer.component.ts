@@ -20,4 +20,7 @@ export class FooterComponent implements OnInit {
 
   }
 
+  moveToTop(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 }
