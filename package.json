@@ -31,7 +31,7 @@
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
     "angular-font-awesome": "^3.1.2",
     "aos": "^2.3.4",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "font-awesome": "^4.7.0",
     "particles.js": "^2.0.0",
     "rxjs": "~6.4.0",
